@@ -1,8 +1,13 @@
 <html>
 	<head>
 		<title>Bare - Spring Boot / Thymeleaf</title>
+		<script src="https://unpkg.com/htmx.org@2.0.2"></script>
 	</head>
 	<body>
 		<h1 th:text="${message}">placeholder</h1>
+
+		<button hx-get="/update" hx-target="#update-target">Click Me</button>
+
+		<div id="update-target">Waiting for update...</div>
 	</body>
 </html>
