@@ -20,7 +20,7 @@ public class BareController {
 	public String update(Model model) {
 		model.addAttribute("date", new Date());
 
-		return "snippets/update.html";
+		return "update.html";
 	}
 
 }
